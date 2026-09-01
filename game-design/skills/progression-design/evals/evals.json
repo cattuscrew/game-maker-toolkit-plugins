@@ -1,0 +1,81 @@
+{
+  "skill_name": "progression-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Players keep hitting a wall at section 3 and quitting. Buff the section 3 enemies down?",
+      "expected_output": "A check of the two curves, not one encounter: the route plots the difficulty curve against the player-power curve, names difficulty outpacing power at section 3, and rebalances the relationship rather than tuning one enemy's number.",
+      "assertions": [
+        "plots the challenge curve against the player-power curve",
+        "names difficulty outpacing power at that point in the run",
+        "reports the fix as rebalancing the two curves, not one enemy's number",
+        "judges the section against the arc, not in isolation"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Once my build comes online the late run is trivial. How do I fix the ending?",
+      "expected_output": "A naming of power outpacing difficulty: the route reports that the power curve pulls ahead of the challenge curve late, and either raises the challenge curve or hands the compounding build to systems-design, rather than buffing one late enemy.",
+      "assertions": [
+        "names power outpacing difficulty in the late run",
+        "reads it as a mismatch of the two curves' shapes",
+        "raises the challenge curve or hands the build snowball to systems-design",
+        "does not fix it by buffing a single late enemy"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Should section 5 enemies have more health?",
+      "expected_output": "An arc question before a number: the route asks whether the challenge curve tracks the power curve at section 5, decides the shape the arc needs there, and hands the specific health value to number-balancing.",
+      "assertions": [
+        "treats it as an arc question about the curve at section 5",
+        "checks whether difficulty tracks power at that point",
+        "decides the shape before any value",
+        "hands the specific magnitude to number-balancing"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Every section is strictly harder than the last. That's good pacing, right?",
+      "expected_output": "A check of pacing, not average difficulty: the route names a monotone ramp with no rests, recommends peaks and valleys and the deliberate placement of the best and last moments, and does not treat rising difficulty alone as good pacing.",
+      "assertions": [
+        "names the monotone ramp as a pacing problem, not a win",
+        "recommends peaks and rests, tension and release",
+        "names peak-end: the best and last moments placed on purpose",
+        "does not equate rising difficulty with good pacing"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Set the difficulty so the player is in flow the entire run.",
+      "expected_output": "An application of the flow channel marked as a borrowed assumption: the route reasons about challenge tracking growing mastery but states the thresholds are not known in this game, marks them as assumptions, and recommends testing the arc with players rather than naming a precise band.",
+      "assertions": [
+        "applies the flow channel as challenge near growing mastery",
+        "states the flow thresholds are borrowed and not known in this game",
+        "marks the flow reasoning as an assumption",
+        "recommends testing the arc with players rather than a precise threshold"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "That arc verdict looks right. Write it up so we can start.",
+      "expected_output": "A verdict and a stop: the route states the recommendation and does not write a plan, open a task, or change a file, because a plan follows a person confirming the solution rather than preceding it.",
+      "assertions": [
+        "ends at the verdict",
+        "writes no plan and opens no task",
+        "changes no file",
+        "treats confirmation as a separate step belonging to the person"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "What exact health should the section-5 boss have?",
+      "expected_output": "A hand-off, not an arc analysis: the route recognizes a magnitude question and directs it to number-balancing rather than designing the run's arc.",
+      "assertions": [
+        "recognizes a magnitude question, not an arc question",
+        "hands the value to number-balancing",
+        "does not design the run arc for a single value request"
+      ]
+    }
+  ]
+}

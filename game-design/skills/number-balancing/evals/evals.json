@@ -1,0 +1,99 @@
+{
+  "skill_name": "number-balancing",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Option A returns 2.0 coins per attempt on average and option B returns 2.1. B is better, right?",
+      "expected_output": "A refusal to decide from the totals alone: the route asks what player experience the options should create, then splits both options into player-experienced moments and marks each moment as price or reward before computing anything further.",
+      "assertions": [
+        "asks for the intended player experience before more arithmetic",
+        "splits both options into per-moment rows rather than comparing totals",
+        "marks each moment as price or reward",
+        "names one comparison unit",
+        "does not choose from the two totals alone"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "A combo reward repeats after each success and stops after four rewards. Is four the balanced cap, or should it be five?",
+      "expected_output": "A report that the cap has no downside term, so it cannot fail a balance check and instead chooses the size and rarity of the longest streak. The average is shown settling while the best moment keeps growing.",
+      "assertions": [
+        "states that raising the cap never lowers a measured outcome",
+        "reports the cap as not balancing a trade",
+        "names what the cap actually chooses",
+        "shows the average settling beside a best moment that does not",
+        "reports reach frequency as a rate and not as a pass or fail",
+        "does not present n_max as a check"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "A risky upgrade returns 1.05 times the reliable option on average. That is inside a borrowed felt-difference band, so the choice is pointless. Confirm.",
+      "expected_output": "A correction: the felt-difference assumption belongs on the quantity the player notices. The response compares both the average and the memorable outcome, marks the borrowed threshold as an assumption, and does not let either quantity decide alone.",
+      "assertions": [
+        "computes the best moment as well as the average",
+        "applies the felt-difference assumption to the observed quantity",
+        "reports disagreement between the average and memorable outcome",
+        "marks the borrowed threshold as an assumption",
+        "does not dismiss the choice from the average alone"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Pick a trigger chance for a risky reward so it returns more, triggers less often, and reaches its ceiling frequently. Nothing satisfies all three constraints.",
+      "expected_output": "One named objection and a stop: the feasible window is empty, which proves the current mechanic shape cannot satisfy the stated constraints. The route names the shape parameter that must move and does not tune around it.",
+      "assertions": [
+        "names the empty feasible window",
+        "shows the bands that fail to overlap",
+        "names the shape parameter that must change",
+        "stops rather than proposing a value",
+        "makes no claim about whether the mechanic is interesting"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "A support die has six sides. What are the odds it shows a 4, and is a 15 percent trigger chance fair against that?",
+      "expected_output": "A refusal to answer from the side count: the route reads the authored faces of the die that is actually in play before quoting any chance, and says so, because faces are authored per die and need not be a uniform run of numbers.",
+      "assertions": [
+        "reads the authored faces before quoting any chance",
+        "does not treat a six-sided die as showing six distinct values",
+        "names the source it read the faces from",
+        "asks for the die when no authored source identifies it"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "The starting deck only has values 1 through 4, so build the cost around a value in that range.",
+      "expected_output": "A separation of what the player starts with from what the system permits: the route reads the validation that owns the legal bound rather than inferring it from the values that happen to exist, and states which of the two each number describes.",
+      "assertions": [
+        "distinguishes the starting loadout from the legal bound",
+        "reads the validation owning the bound instead of inferring it",
+        "states which of the two any quoted number describes",
+        "does not treat a starting sample as the whole range"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Give me several options for pricing this upgrade's drawback.",
+      "expected_output": "Options that differ by axis rather than by number: the route lists the mechanic's axes first, names the axis each option uses, treats two options on one axis as one option, and reports an exhausted axis list as a real result meaning the change needs new capability.",
+      "assertions": [
+        "lists the mechanic's axes before proposing anything",
+        "names the axis each option uses",
+        "counts two options on one axis as one option",
+        "reports an exhausted axis list as a result rather than repeating an axis",
+        "does not return several prices attached to one unchanged reward"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "That trade looks right. Write it up so we can start.",
+      "expected_output": "A verdict and a stop: the route states the recommendation and does not write a plan, open a task, or change a file, because a plan follows a person confirming the solution rather than preceding it.",
+      "assertions": [
+        "ends at the verdict",
+        "writes no plan and opens no task",
+        "changes no file",
+        "treats confirmation as a separate step belonging to the person"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "game-maker-toolkit-plugins",
+  "description": "Game-making skills for Claude Code. Currently ships the game-design plugin; more to come.",
+  "owner": { "name": "andrewle" },
+  "plugins": [
+    {
+      "name": "game-design",
+      "source": "./game-design",
+      "description": "Game-design method skills: number balancing, economy, systems, and progression. Method only — each project supplies its own authored values."
+    }
+  ]
+}

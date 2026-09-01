@@ -1,0 +1,81 @@
+{
+  "skill_name": "systems-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "This new relic repeats the last effect. We already have the merge relic. Is that fine?",
+      "expected_output": "A mapping of the interaction before any judgment: the route reads how the two effects resolve together, classifies the pair, and checks for an unbounded chain or loop rather than judging the new relic alone.",
+      "assertions": [
+        "reads how the two mechanics combine before judging",
+        "maps the new mechanic against the existing one, not in isolation",
+        "classifies the interaction (synergy, redundancy, anti-synergy, or degeneracy)",
+        "checks specifically for an unbounded chain or loop"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Instead of letting the player set the demanded target, roll it at round start. Keep the same penalty for missing it?",
+      "expected_output": "A naming of the lost self-correction: a player-set demand cannot fail because it is set from what they hold, so randomizing it removes that guarantee and the penalty multiplies; the route hands the re-priced penalty to number-balancing rather than sizing it.",
+      "assertions": [
+        "identifies the player-set demand as a self-correcting (negative) feedback loop",
+        "states that randomizing it removes the guarantee and multiplies the penalty",
+        "reports the fix as restoring the loop or re-pricing its failure",
+        "hands the penalty magnitude to number-balancing"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Give me another drawback option: widen the trigger and charge more health, like the others.",
+      "expected_output": "A distinction of kind from degree: keeping the same reward and attaching a price is a change on the same axis, so it is degree, not a new decision; the route points at a rule change rather than a bigger number.",
+      "assertions": [
+        "names the change as degree, not kind, on the same axis",
+        "states that a number on the same axis is not a new decision",
+        "points at changing a rule rather than tuning a value",
+        "does not accept the widened-gate-plus-charge as a new mechanic"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "With these three relics on the board, is there a single line players will always take?",
+      "expected_output": "A check for a dominant strategy: the route looks for a line that beats the others regardless of situation and collapses the decision space, treats it as distinct from one option being dead on its numbers, and reports the fix as changing the line rather than its stakes.",
+      "assertions": [
+        "looks for a strategy that wins regardless of situation",
+        "frames it as collapsing the decision space, not one option's number",
+        "distinguishes a dominant strategy from a dead option",
+        "reports the fix as changing the line rather than tuning its value"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "This combo can deal unlimited damage in one turn. What number fixes it?",
+      "expected_output": "A refusal to price a degenerate loop: an unbounded chain has no price, so the route names the loop and reports the fix as a cap or a broken loop, handing only the cap's size to number-balancing.",
+      "assertions": [
+        "names the combination as a degenerate, unbounded loop",
+        "states that an unbounded chain cannot be repaired by a value",
+        "reports the fix as capping or breaking the loop",
+        "hands only the cap's size to number-balancing"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "That interaction verdict looks right. Write it up so we can start.",
+      "expected_output": "A verdict and a stop: the route states the recommendation and does not write a plan, open a task, or change a file, because a plan follows a person confirming the solution rather than preceding it.",
+      "assertions": [
+        "ends at the verdict",
+        "writes no plan and opens no task",
+        "changes no file",
+        "treats confirmation as a separate step belonging to the person"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "Does charging health for this make the health economy inflate?",
+      "expected_output": "A hand-off, not an analysis: the route recognizes a resource-flow question about sources and sinks and directs it to economy-design rather than treating it as an interaction between mechanics.",
+      "assertions": [
+        "recognizes a resource-flow question, not an interaction question",
+        "hands the question to economy-design",
+        "does not analyze it as a mechanic-versus-mechanic interaction"
+      ]
+    }
+  ]
+}

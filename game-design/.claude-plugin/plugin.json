@@ -1,0 +1,8 @@
+{
+  "name": "game-design",
+  "displayName": "Game Design",
+  "description": "Game-design method skills — number balancing, economy, systems, and progression. Portable methods that read whatever project they run in; each project supplies its own authored values.",
+  "version": "0.1.0",
+  "author": { "name": "andrewle" },
+  "license": "MIT"
+}

@@ -1,0 +1,82 @@
+{
+  "skill_name": "economy-design",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Players end the run holding way too much gold. Just make everything in the shop cost more, right?",
+      "expected_output": "A refusal to fix it with a bigger price: the route maps gold's sources against its sinks, names it as a source with no matching sink (inflation) that a higher price cannot repair, and points at sink structure rather than a number.",
+      "assertions": [
+        "maps gold's sources and sinks apart before proposing anything",
+        "names the imbalance as inflation, a source with no matching sink",
+        "states that raising the price does not fix an inflating resource",
+        "points at adding or changing a sink rather than a magnitude",
+        "does not choose a new price from the surplus"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "This upgrade needs a second cost. Invent a new currency for it.",
+      "expected_output": "A search before an invention: the route first looks for a resource the game already tracks but never charges, prefers charging that over a new system, and only proposes inventing one if no untapped resource carries the intended tension.",
+      "assertions": [
+        "looks for a resource already modeled but never charged before inventing one",
+        "prefers reusing an existing resource because it adds no new system",
+        "checks that the reused resource carries the intended tension",
+        "does not reach first for an invented currency"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Every downside option charges health. That is fine as long as I vary the amounts, isn't it?",
+      "expected_output": "A naming of single-currency collapse: one currency makes every trade the same decision at a different size, so varying the amount changes the volume, not the question; a second currency changes more decisions than retuning the first.",
+      "assertions": [
+        "names single-currency collapse: every trade weighs the same thing",
+        "states that varying the amount is the same question at a different size",
+        "reports a second currency as changing more decisions than a bigger first one",
+        "does not accept varied amounts as varied choices"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "Is charging 3 health here fair versus charging 5 coins?",
+      "expected_output": "A separation of structure from magnitude: the route treats the choice of which currency the decision should weigh as its own question, decides the currency structure, and hands the specific amount to number-balancing rather than sizing it here.",
+      "assertions": [
+        "treats which currency to charge as a structure question, not a number",
+        "reasons about what each currency makes the player weigh",
+        "hands the specific magnitude to number-balancing",
+        "does not size the cost inside this route"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "That economy fix looks right. Write it up so we can start.",
+      "expected_output": "A verdict and a stop: the route states the recommendation and does not write a plan, open a task, or change a file, because a plan follows a person confirming the solution rather than preceding it.",
+      "assertions": [
+        "ends at the verdict",
+        "writes no plan and opens no task",
+        "changes no file",
+        "treats confirmation as a separate step belonging to the person"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "What does the forge relic cost right now?",
+      "expected_output": "A plain lookup, not an economy analysis: the route reads the authored source that owns the value and reports it, without entering the flow-mapping method, because a lookup is not an economy question.",
+      "assertions": [
+        "recognizes a lookup rather than an economy decision",
+        "reads the authored source that owns the value",
+        "does not enter the flow-mapping method for a lookup"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "I want the more gold you hold, the more each victory pays. Balance the payout.",
+      "expected_output": "A naming of a runaway source: a payout that scales with the resource it grants compounds, so the structure fix is a cap or a broken loop, not a tuned payout; the cap's size is a magnitude for number-balancing while the need for a cap is a structure result.",
+      "assertions": [
+        "names the design as a runaway source, positive feedback that compounds",
+        "compares its effect at the full horizon, not the first step",
+        "reports the fix as a cap or broken loop rather than a tuned payout",
+        "separates the need for a cap (structure) from the cap's size (magnitude)"
+      ]
+    }
+  ]
+}
