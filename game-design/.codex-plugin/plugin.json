@@ -1,0 +1,33 @@
+{
+  "name": "game-design",
+  "version": "0.1.0",
+  "description": "Game-design methods for balancing, economy, systems, and progression.",
+  "author": {
+    "name": "andrewle"
+  },
+  "license": "MIT",
+  "keywords": [
+    "game-design",
+    "balancing",
+    "economy",
+    "systems",
+    "progression"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Game Design",
+    "shortDescription": "Reusable methods for game design decisions.",
+    "longDescription": "Game-agnostic methods for balancing numbers, structuring economies, judging system interactions, and shaping progression arcs.",
+    "developerName": "andrewle",
+    "category": "Education & Research",
+    "capabilities": [
+      "Read"
+    ],
+    "defaultPrompt": [
+      "Balance a game mechanic.",
+      "Review a game's resource economy.",
+      "Check a game's difficulty and reward arc."
+    ],
+    "brandColor": "#5B4B8A"
+  }
+}

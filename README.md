@@ -1,7 +1,7 @@
 # game-maker-toolkit-plugins
 
-A Claude Code marketplace of game-making skills. It currently holds one plugin,
-with room for more over time.
+An agent-neutral marketplace of game-making skills for Claude Code and Codex. It
+currently holds one plugin, with room for more over time.
 
 ## Plugins
 
@@ -24,7 +24,7 @@ arc to `progression-design`.
 `## Project overlay` section tells you to read your own project's product direction
 and authored sources before Step 0. Every project supplies its own numbers.
 
-## Install
+## Claude Code
 
 ```
 /plugin marketplace add <owner>/game-maker-toolkit-plugins
@@ -34,10 +34,31 @@ and authored sources before Step 0. Every project supplies its own numbers.
 Skills then fire as `game-design:number-balancing`, `game-design:economy-design`,
 and so on.
 
+For local development without a marketplace:
+
+```
+claude --plugin-dir ./game-design
+```
+
+## Codex
+
+The Codex marketplace catalog is `.agents/plugins/marketplace.json`, and the
+Codex plugin manifest is `game-design/.codex-plugin/plugin.json`.
+
+From this repository, register and install the local marketplace:
+
+```
+codex plugin marketplace add .
+codex plugin add game-design@game-maker-toolkit-plugins
+```
+
+Start a new Codex thread after installation. You can explicitly request a skill
+with `$game-design:number-balancing`, or let Codex select one from the request.
+
 ## Local development
 
 ```
-claude --plugin-dir ./game-design          # load the plugin without a marketplace
-claude plugin validate ./game-design        # check the plugin
-claude plugin validate .                     # check the marketplace
+claude plugin validate ./game-design        # check the Claude plugin
+claude plugin validate .                   # check the Claude marketplace
+codex plugin list --available --json        # inspect available Codex plugins
 ```

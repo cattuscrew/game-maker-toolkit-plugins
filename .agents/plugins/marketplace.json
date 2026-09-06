@@ -1,0 +1,20 @@
+{
+  "name": "game-maker-toolkit-plugins",
+  "interface": {
+    "displayName": "Game Maker Toolkit"
+  },
+  "plugins": [
+    {
+      "name": "game-design",
+      "source": {
+        "source": "local",
+        "path": "./game-design"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research"
+    }
+  ]
+}
